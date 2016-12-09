@@ -1,0 +1,15 @@
+<?php
+						
+							$tanggal = $a['date_ob'];
+							if(!empty($tanggal)){
+							$exec = $hitungumur->age($tanggal);
+							echo $exec->y."tahun ".$exec->m." Bulan ".$exec->d."hari";
+							}
+							else if($a['date_ob'] == $today){
+								echo'Data tidak valid';
+								
+							}
+							else{
+								echo'Data Lahir Tidak Valid';
+							}
+						?>
